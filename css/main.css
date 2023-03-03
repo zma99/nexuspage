@@ -1,0 +1,20 @@
+/* MAIN */
+.main{
+    grid-area: main;
+    padding: 1em;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+
+.wap-chat{
+    justify-self: end;
+    align-self: end;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
+
+.wap-chat a img{
+    width: 10vh;
+}

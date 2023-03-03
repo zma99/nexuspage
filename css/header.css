@@ -1,0 +1,178 @@
+header {
+    grid-area: header;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar{
+    padding: 0 1em;
+    background: rgb(73, 73, 73);
+    height: 100%;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template: 
+        "nav-logo nav-menu nav-search nav-modal";
+}       
+
+
+
+.nav-logo{
+    width: 50px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+
+.active{
+    color: rgb(137, 209, 155);
+}
+
+.nav-link:hover{
+    /* color:rgb(137, 209, 155); */
+    color:rgb(255, 92, 92)
+}
+
+.btn{
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+    font-family: Raleway;
+    background:rgb(137, 209, 155);
+}
+
+
+.btn:hover{
+    background: white;
+    color:rgb(137, 209, 155);
+    cursor: pointer;
+}
+
+.nav-search{
+    display: flex;
+    gap: 5px;
+}
+
+.nav-search input{
+    margin: 0;
+    padding: 5px;
+    width: 400px;
+    border-radius: 4px;
+    border: none;
+}
+
+
+
+.nav-modal {
+    /* background:rgb(137, 209, 155); */
+    background: linear-gradient(rgb(137, 209, 155), rgb(73, 73, 73));
+    border-radius: 8px;
+    border: none;
+    margin: auto;
+    margin-right: 3em;
+    margin-top: 4em;
+    padding: 10px;
+}
+
+.modal-container{
+    padding: 10px;
+    display: grid;
+    /* gap: 10px; */
+    grid-template: 
+        "modal-btn      modal-btn"      1fr  
+        "modal-title    modal-title"    2fr
+        "modal-form     modal-form"     4fr;
+}
+
+.modal-btn{
+    grid-area: modal-btn;
+    justify-self: end;
+}
+
+.modal-title{
+    grid-area: modal-title;
+    justify-self: center;
+}
+
+.modal-form{
+    color: white;
+    grid-area: modal-form;
+    display: grid;
+    gap: 1em 5px;
+    grid-template-columns: 1fr;
+}
+
+.modal-form-input{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 2fr;
+}
+
+.modal-form-btn{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+}
+
+.modal-form-btn > *{
+    font-size: 1em;
+}
+
+.btn-close{
+    grid-area: btn-close;
+    background: rgb(226, 226, 226);
+    border-radius: 6px;
+    font-size: large;
+}
+
+.btn-close:hover{
+    background: rgb(255, 92, 92);
+    color: white;
+}
+
+.modal-form input{
+    border-radius: 4px;
+    border: none;
+    padding: 4px;
+    width: 100%
+}
+
+
+
+.menu-desp{
+    position: absolute;
+    display: none;
+    padding: 10px 0;
+    padding-top: 30px;
+    width: 130px;
+    background:rgb(73 73 73 / 0.8);
+}
+
+.nav-menu li:hover .menu-desp{
+    display: block;
+}
+
+.menu-desp li:hover{
+    background:rgb(137, 209, 155);
+}
+
+.menu-desp li{
+    width: auto;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.menu-desp li a:hover{
+    color:black;
+}
+

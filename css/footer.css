@@ -1,0 +1,29 @@
+/* FOOTER */
+
+.footer{
+    grid-area: footer;
+    background:rgb(73, 73, 73);
+}
+
+.foo-container{
+    display: grid;
+    justify-content: space-around;
+    align-items:flex-start;
+    grid-template:
+        "foo-nav foo-redes foo-data" 50%;
+    padding: 10px;
+}
+
+
+.foo-menu{
+    list-style: none;
+    display: block;
+}
+
+.foo-menu li a{
+    font-size: small;
+}
+
+.foo-nav, .foo-redes, .foo-data h4{
+    color: rgb(137, 209, 155);
+}
